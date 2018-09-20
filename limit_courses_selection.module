@@ -1,0 +1,16 @@
+<?php
+
+use \Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implement hook_form_FORM_ID_alter
+ * @param $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ * @param $form_id
+ */
+
+function limit_courses_selection_form_entity_browser_training_list_items_browser_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+  $form['#attached']['library'][] = 'limit_courses_selection/one-select';
+
+}

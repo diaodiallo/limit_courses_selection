@@ -1,0 +1,6 @@
+one-select:
+  version: 1.x
+  js:
+    js/one-select.js: {}
+  dependencies:
+      - core/jquery
